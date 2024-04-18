@@ -38,8 +38,8 @@ uname -m
     	mesh-seed-address-port  192.168.64.17 3002        # VM-3
 
    	interval 150                # Number of milliseconds between heartbeats
-   	timeout 10
-    }                # Number of heartbeat intervals to wait before timing out a node
+   	timeout 10		    # Number of heartbeat intervals to wait before timing out a node	
+    }                
     ```
 
   

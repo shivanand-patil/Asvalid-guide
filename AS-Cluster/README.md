@@ -12,6 +12,18 @@ lsb_release -a
 ```bash
 uname -m
 ```
+- Follow installation guide from [here](https://aerospike.com/docs/server/operations/install/linux/ubuntu)
+- Start Aerospike and verify using commands:
+  ```bash
+  sudo systemctl start aerospike.service
+  ```
+
+  ```bash
+  sudo systemctl status aerospike.service
+  ```
+  
+- Repeat the same for 3-VMs (VM-1, VM-2, VM-3)
+- edit the `/etc/aerospike/aerospike.conf` with the `aerospike.conf` in every node (VM-1, VM-2, VM-3)
 
 ## 3-Node cluster config explaination
 
@@ -61,4 +73,13 @@ uname -m
 
 - Read more about Multicast and Mesh [here](https://aerospike.com/docs/server/architecture/clustering.html)
 
+## Restart the server
 
+- After successfull installation of Aerospike and configuration edit in all 3 nodes, restart the `aerospike.service` using:
+  ```bash
+  sudo systemctl restart aerospike.service
+  ```
+- Verify
+  ```bash
+  sudo systemctl status aerospike.service
+  ``` 

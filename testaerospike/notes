@@ -1,0 +1,1 @@
+asd --version | awk '{print $5}' | cut -d. -f1-3

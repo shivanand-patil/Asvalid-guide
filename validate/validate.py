@@ -47,7 +47,7 @@ def parse_config(file_path):
     return errors
 
 if __name__ == "__main__":
-    config_file = "aerospike.conf"  # Path to Aerospike config file
+    config_file = "/etc/aerospike/aerospike.conf"  # Path to Aerospike config file
     validation_errors = parse_config(config_file)
     if validation_errors:
         for error in validation_errors:

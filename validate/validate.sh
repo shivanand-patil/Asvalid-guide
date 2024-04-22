@@ -26,7 +26,7 @@
 #!/bin/bash
 
 # Validate configuration with server-valid.py
-python3 valid.py
+python3 validate.py
 
 # Check if server-valid.py encountered errors
 if [ $? -ne 0 ]; then
@@ -35,7 +35,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Proceed if no errors
-file_path="/etc/aerospike/aerospike.conf"
+file_path="aerospike.conf"
 
 
 # Get Aerospike version

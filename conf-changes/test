@@ -1,0 +1,24 @@
+#!/bin/bash
+
+baseline_config="/etc/aerospike/baseline_config.txt"
+current_config="/etc/aerospike/runtime.txt"
+config_history_path="/etc/aerospike/config_history"
+
+check_config_changes() {
+    asinfo -v 'get-config:' -l > "$current_config"
+
+    if ! diff "$baseline_config" "$current_config" > /dev/null; then
+        echo "Configuration has changed"
+
+        local timestamp=$(date "+%Y-%m-%d_%H-%M-%S")
+        local diff_output="${config_history_path}/config_diff_${timestamp}.txt"
+        diff "$baseline_config" "$current_config" > "$diff_output"
+
+        echo "Detected changes have been logged to: $diff_output"
+    else
+        echo "No configuration changes detected."
+    fi
+}
+
+mkdir -p "$config_history_path"
+check_config_changes

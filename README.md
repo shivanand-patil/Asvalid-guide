@@ -1,3 +1,6 @@
+This repo is only for reference, main repos are linked as git submodules above 👆
+
+
 # Asvalid Tool
 
 - Asvalid is a tool that helps validate static Aerospike configuration file against aerospike's versioned schemas.

@@ -1,4 +1,4 @@
-This repo is only for reference, main repos are linked as git submodules above (refer master branches for latest changes) 👆
+This repo is only for reference, main repos are linked as git submodules above 👆 (refer master branches for latest changes) 
 
 
 # Asvalid Tool

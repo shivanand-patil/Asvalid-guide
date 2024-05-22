@@ -1,6 +1,6 @@
 [submodule "Asvalid-tool"]
 	path = Asvalid-tool
-	url = https://github.com/shivanand-patil/Asvalid-tool
+	url = https://github.com/shivanand-patil/Asvalid-tool/tree/master
 [submodule "Asvalid-salt"]
 	path = Asvalid-salt
-	url = https://github.com/shivanand-patil/Asvalid-salt
+	url = https://github.com/shivanand-patil/Asvalid-salt/tree/main

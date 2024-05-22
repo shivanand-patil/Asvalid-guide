@@ -1,3 +1,0 @@
-# save_baseline_config
-#!/bin/bash
-asinfo -v 'get-config:' -l > /etc/aerospike/baseline_config.txt 
